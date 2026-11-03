@@ -46,6 +46,7 @@ export default function Home() {
           <a href="#como-funciona">Como funciona</a>
           <a href="#para-seu-negocio">Para seu negócio</a>
           <a href="#recursos">Recursos</a>
+          <a href="#precos">Planos e preços</a>
           <a href="#sobre">Sobre nós</a>
         </nav>
         <a className="button button-small button-outline" href="#contato">
@@ -186,6 +187,33 @@ export default function Home() {
       </section>
       <LoyaltyCalculator />
 
+      <section className="pricing-section section-pad" id="precos">
+        <div className="pricing-heading">
+          <div className="eyebrow"><span className="eyebrow-dot" /> UM CLUBE DE FIDELIDADE PARA O SEU COMÉRCIO</div>
+          <h2>Tecnologia para fidelizar.<br /><span>Um investimento que cabe na rotina.</span></h2>
+          <p>Tenha seu próprio programa de fidelidade e fortaleça o relacionamento com quem escolhe seu negócio.</p>
+        </div>
+        <article className="pricing-card">
+          <div className="pricing-card-top">
+            <div><span className="pricing-label">ASSINATURA MENSAL</span><h3>PontoAmado</h3><p>Seu comércio com um clube de fidelidade próprio.</p></div>
+            <span className="pricing-heart" aria-hidden="true">♡</span>
+          </div>
+          <div className="pricing-value"><strong>R$ 69,90</strong><span>/ mês</span></div>
+          <p className="pricing-caption">Uma assinatura para aproximar seu comércio dos seus clientes.</p>
+          <div className="pricing-divider" />
+          <ul className="pricing-features">
+            <li><span>✓</span> Programa de fidelidade do seu estabelecimento</li>
+            <li><span>✓</span> Cadastro e acompanhamento de clientes</li>
+            <li><span>✓</span> Pontuação por compras e gestão de recompensas</li>
+            <li><span>✓</span> Divulgação de promoções do seu comércio</li>
+            <li><span>✓</span> Painel para administrar seu clube</li>
+            <li><span>✓</span> Experiência digital para seus clientes</li>
+          </ul>
+          <a className="button button-primary pricing-cta" href="#contato">Quero conhecer o PontoAmado <Arrow /></a>
+          <small className="pricing-footnote">Fale com nossa equipe para conhecer a plataforma e iniciar sua jornada.</small>
+        </article>
+      </section>
+
       <section className="business-section section-pad" id="para-seu-negocio">
         <div className="business-copy"><div className="eyebrow"><span className="eyebrow-dot" /> FEITO PARA QUEM FAZ ACONTECER</div><h2>Todo comércio pode ter seus <span>clientes preferidos.</span></h2><p>Fidelizar não é privilégio das grandes redes. É um jeito de valorizar quem continua escolhendo o que você faz.</p><a href="#contato" className="text-link">Vamos conversar sobre seu negócio <span>↗</span></a></div>
         <div className="business-grid">{businesses.map(([icon, name]) => <div className="business-card" key={name}><span>{icon}</span><b>{name}</b><i>↗</i></div>)}</div>
@@ -207,6 +235,20 @@ export default function Home() {
         <h2>Está na hora de transformar<br />seu comércio em um <em>PontoAmado.</em></h2>
         <p>Conte um pouco sobre o seu negócio. Se quiser, peça uma apresentação simples da plataforma e de como começar.</p>
         <LeadForm />
+        <div className="contact-details" aria-label="Canais de contato do PontoAmado">
+          <a className="contact-item" href="mailto:contato@pontoamado.com.br">
+            <span className="contact-icon" aria-hidden="true">✉</span>
+            <span><small>FALE COM A GENTE</small><b>contato@pontoamado.com.br</b></span>
+          </a>
+          <a className="contact-item" href="mailto:suporte@pontoamado.com.br">
+            <span className="contact-icon" aria-hidden="true">⌁</span>
+            <span><small>PRECISA DE AJUDA?</small><b>suporte@pontoamado.com.br</b></span>
+          </a>
+          <a className="contact-whatsapp" href="https://wa.me/557591512810" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">◉</span> Converse com a gente pelo WhatsApp
+            <b aria-hidden="true">↗</b>
+          </a>
+        </div>
         <span className="cta-note">Seu negócio, suas regras de fidelidade, seus clientes e suas recompensas.</span>
       </section>
 
