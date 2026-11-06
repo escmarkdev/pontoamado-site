@@ -97,6 +97,22 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="research-section section-pad" aria-labelledby="research-title">
+        <div className="research-heading">
+          <div className="eyebrow"><span className="eyebrow-dot" /> O QUE UMA PESQUISA NA AMÉRICA LATINA REVELA</div>
+          <h2 id="research-title">Fidelidade é mais do que pontos.<br /><span>É relacionamento.</span></h2>
+          <p>Os dados mostram como os programas de fidelidade podem influenciar a percepção sobre uma marca, as decisões de compra e a relação com os clientes.</p>
+        </div>
+        <div className="research-stats">
+          <article className="research-stat"><strong>83%</strong><p>afirmam que participar de um programa de fidelidade melhora sua percepção sobre a marca.</p></article>
+          <article className="research-stat"><strong>82%</strong><p>dizem que os programas de fidelidade influenciam seu nível de gastos.</p></article>
+          <article className="research-stat"><strong>62%</strong><p>também compram produtos semelhantes fora dos programas de que participam.</p></article>
+          <article className="research-stat"><strong>50%</strong><p>consideram muito importante poder escolher suas próprias recompensas.</p></article>
+        </div>
+        <p className="research-insight"><span>♡</span> Um programa de fidelidade precisa ir além de acumular pontos: deve reconhecer escolhas, oferecer benefícios relevantes e criar motivos para o cliente voltar.</p>
+        <small className="research-source">Fonte: EY, estudo sobre estratégias e programas de fidelidade na América Latina (2025). Pesquisa realizada na Argentina, Colômbia, Equador, México e Peru. Os percentuais não representam uma medição exclusiva do mercado brasileiro.</small>
+      </section>
+
       <section className="trust-strip" aria-label="Sobre a proposta PontoAmado">
         <span>TECNOLOGIA PARA APROXIMAR PESSOAS</span>
         <span className="trust-divider" />
