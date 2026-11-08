@@ -49,8 +49,8 @@ export default function Home() {
           <a href="#precos">Planos e preços</a>
           <a href="#sobre">Sobre nós</a>
         </nav>
-        <a className="button button-small button-outline" href="#contato">
-          Quero fazer parte <Arrow />
+        <a className="button button-small button-outline" href="https://app.pontoamado.com.br" aria-label="Entrar no aplicativo PontoAmado">
+          Entrar <Arrow />
         </a>
       </header>
 
@@ -251,15 +251,7 @@ export default function Home() {
         <h2>Está na hora de transformar<br />seu comércio em um <em>PontoAmado.</em></h2>
         <p>Conte um pouco sobre o seu negócio. Se quiser, peça uma apresentação simples da plataforma e de como começar.</p>
         <LeadForm />
-        <div className="contact-details" aria-label="Canais de contato do PontoAmado">
-          <a className="contact-item" href="mailto:contato@pontoamado.com.br">
-            <span className="contact-icon" aria-hidden="true">✉</span>
-            <span><small>FALE COM A GENTE</small><b>contato@pontoamado.com.br</b></span>
-          </a>
-          <a className="contact-item" href="mailto:suporte@pontoamado.com.br">
-            <span className="contact-icon" aria-hidden="true">⌁</span>
-            <span><small>PRECISA DE AJUDA?</small><b>suporte@pontoamado.com.br</b></span>
-          </a>
+        <div className="contact-details" aria-label="Contato pelo WhatsApp">
           <a className="contact-whatsapp" href="https://wa.me/557591512810" target="_blank" rel="noopener noreferrer">
             <span aria-hidden="true">◉</span> Converse com a gente pelo WhatsApp
             <b aria-hidden="true">↗</b>
@@ -268,7 +260,7 @@ export default function Home() {
         <span className="cta-note">Seu negócio, suas regras de fidelidade, seus clientes e suas recompensas.</span>
       </section>
 
-      <footer className="site-footer"><div className="footer-main"><a className="footer-brand" href="#inicio"><img src="/logo-claro.png" alt="PontoAmado" /></a><div className="footer-slogan">Seu comércio. Seus clientes.<br /><b>Mais motivos para voltar.</b></div><div className="footer-about"><span>TECNOLOGIA PARA APROXIMAR</span><p>Uma maneira mais humana de cuidar das relações do comércio local.</p></div></div><div className="footer-bottom"><span>© 2026 PontoAmado. Feito com carinho.</span><span>Uma ideia que ainda vai longe <b>♡</b></span></div></footer>
+      <footer className="site-footer"><div className="footer-main"><a className="footer-brand" href="#inicio"><img src="/logo-claro.png" alt="PontoAmado" /></a><div className="footer-slogan">Seu comércio. Seus clientes.<br /><b>Mais motivos para voltar.</b></div><div className="footer-about"><span>TECNOLOGIA PARA APROXIMAR</span><p>Uma maneira mais humana de cuidar das relações do comércio local.</p><div className="footer-contacts"><a href="mailto:contato@pontoamado.com.br">contato@pontoamado.com.br</a><a href="mailto:suporte@pontoamado.com.br">suporte@pontoamado.com.br</a></div></div></div><div className="footer-bottom"><span>© 2026 PontoAmado. Feito com carinho.</span><span>Uma ideia que ainda vai longe <b>♡</b></span></div></footer>
     </main>
   );
 }
