@@ -209,25 +209,66 @@ export default function Home() {
           <h2>Tecnologia para fidelizar.<br /><span>Um investimento que cabe na rotina.</span></h2>
           <p>Tenha seu próprio programa de fidelidade e fortaleça o relacionamento com quem escolhe seu negócio.</p>
         </div>
-        <article className="pricing-card">
-          <div className="pricing-card-top">
-            <div><span className="pricing-label">ASSINATURA MENSAL</span><h3>PontoAmado</h3><p>Seu comércio com um clube de fidelidade próprio.</p></div>
-            <span className="pricing-heart" aria-hidden="true">♡</span>
-          </div>
-          <div className="pricing-value"><strong>R$ 69,90</strong><span>/ mês</span></div>
-          <p className="pricing-caption">Uma assinatura para aproximar seu comércio dos seus clientes.</p>
-          <div className="pricing-divider" />
-          <ul className="pricing-features">
-            <li><span>✓</span> Programa de fidelidade do seu estabelecimento</li>
-            <li><span>✓</span> Cadastro e acompanhamento de clientes</li>
-            <li><span>✓</span> Pontuação por compras e gestão de recompensas</li>
-            <li><span>✓</span> Divulgação de promoções do seu comércio</li>
-            <li><span>✓</span> Painel para administrar seu clube</li>
-            <li><span>✓</span> Experiência digital para seus clientes</li>
-          </ul>
-          <a className="button button-primary pricing-cta" href="#contato">Quero conhecer o PontoAmado <Arrow /></a>
-          <small className="pricing-footnote">Fale com nossa equipe para conhecer a plataforma e iniciar sua jornada.</small>
-        </article>
+        <div className="pricing-grid">
+          <article className="pricing-card">
+            <div className="pricing-card-top">
+              <div><span className="pricing-label">PARA COMEÇAR</span><h3>Essencial</h3><p>O essencial para criar seu clube e reconhecer quem compra com você.</p></div>
+              <span className="pricing-heart" aria-hidden="true">♡</span>
+            </div>
+            <div className="pricing-value"><strong>R$ 49,90</strong><span>/ mês</span></div>
+            <p className="pricing-limit">Até <b>100 clientes ativos</b> no clube</p>
+            <div className="pricing-divider" />
+            <ul className="pricing-features">
+              <li><span>✓</span> Programa de fidelidade do seu estabelecimento</li>
+              <li><span>✓</span> Registro de compras e acúmulo de pontos</li>
+              <li><span>✓</span> Cadastro e acompanhamento de clientes</li>
+              <li><span>✓</span> Criação e gestão de recompensas</li>
+              <li><span>✓</span> Painel básico para administrar seu clube</li>
+              <li><span>✓</span> Experiência digital para seus clientes</li>
+            </ul>
+            <a className="button button-primary pricing-cta" href="#contato">Quero começar <Arrow /></a>
+          </article>
+
+          <article className="pricing-card pricing-card-featured">
+            <div className="pricing-card-top">
+              <div><span className="pricing-label">MAIS ESCOLHIDO</span><h3>Profissional</h3><p>Para fortalecer o relacionamento e ampliar as possibilidades do seu negócio.</p></div>
+              <span className="pricing-heart" aria-hidden="true">✦</span>
+            </div>
+            <div className="pricing-value"><strong>R$ 69,90</strong><span>/ mês</span></div>
+            <p className="pricing-limit">Até <b>500 clientes ativos</b> no clube</p>
+            <div className="pricing-divider" />
+            <ul className="pricing-features">
+              <li><span>✓</span> Tudo do plano Essencial</li>
+              <li><span>✓</span> Cardápio digital e recebimento de pedidos</li>
+              <li><span>✓</span> Divulgação de promoções para membros do clube</li>
+              <li><span>✓</span> Indicadores para acompanhar o movimento do clube</li>
+              <li><span>✓</span> Recursos para fortalecer o relacionamento com clientes</li>
+            </ul>
+            <a className="button button-primary pricing-cta" href="#contato">Quero ser Profissional <Arrow /></a>
+          </article>
+
+          <article className="pricing-card">
+            <div className="pricing-card-top">
+              <div><span className="pricing-label">PARA CRESCER</span><h3>Premium</h3><p>Mais capacidade e inteligência para decisões e ações comerciais.</p></div>
+              <span className="pricing-heart" aria-hidden="true">♛</span>
+            </div>
+            <div className="pricing-value"><strong>R$ 119,90</strong><span>/ mês</span></div>
+            <p className="pricing-limit">Até <b>1.500 clientes ativos</b> no clube</p>
+            <div className="pricing-divider" />
+            <ul className="pricing-features">
+              <li><span>✓</span> Tudo do plano Profissional</li>
+              <li><span>✓</span> Indicadores avançados de desempenho</li>
+              <li><span>✓</span> Análise do comportamento e da frequência dos clientes</li>
+              <li><span>✓</span> Planejamento de campanhas segmentadas</li>
+              <li><span>✓</span> Recursos avançados de gestão do relacionamento</li>
+            </ul>
+            <a className="button button-primary pricing-cta" href="#contato">Quero conhecer o Premium <Arrow /></a>
+          </article>
+        </div>
+        <div className="pricing-clarification">
+          <p><b>Como funciona o limite de clientes?</b> Consideramos ativos os clientes vinculados ao clube que realizaram ao menos uma compra nos últimos 12 meses. Não é o total de cadastros da plataforma.</p>
+          <small>Os recursos de indicadores avançados, análise de comportamento e campanhas segmentadas serão disponibilizados gradualmente, conforme a evolução da plataforma. Consulte nossa equipe sobre a disponibilidade de cada recurso.</small>
+        </div>
       </section>
 
       <section className="business-section section-pad" id="para-seu-negocio">
