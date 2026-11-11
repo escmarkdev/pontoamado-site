@@ -1,0 +1,1 @@
+**CONTRATADO:** Lucio José Borba Escobar, pessoa física, inscrito no CPF sob nº 616.710.704-10, com endereço em Hernani Sá, Ilhéus, Bahia, Brasil, telefone +55 (75) 99151-2810 e e-mail contato@pontoamado.com.br, responsável pela operação da plataforma PontoAmado nesta fase inicial.
