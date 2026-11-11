@@ -5,6 +5,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import "./legal.css";
 
+import { legalDocuments } from "../../../content/legal-documents";
 const documents = {
   "termos-clientes": { title: "Termos de Uso — Clientes", prefix: "TERMOS DE USO DO PONTOAMADO", match: "CLIENTES" },
   "termos-lojistas": { title: "Termos de Uso e Contrato — Lojistas", prefix: "TERMOS DE USO E CONTRATO DE LICEN", match: "LOJISTAS" },
@@ -80,26 +81,15 @@ function MarkdownContent({ source }: { source: string }) {
   return <div className="legal-content">{blocks}</div>;
 }
 
-const documentSources: Record<Slug, Promise<string>> = {
-  "termos-clientes": readFile(path.join(process.cwd(), "content/legal/termos-clientes.md"), "utf8"),
-  "termos-lojistas": readFile(path.join(process.cwd(), "content/legal/termos-lojistas.md"), "utf8"),
-  "regulamento-clubes": readFile(path.join(process.cwd(), "content/legal/regulamento-clubes.md"), "utf8"),
-  privacidade: readFile(path.join(process.cwd(), "content/legal/privacidade.md"), "utf8"),
-};
-
-async function getDocument(slug: Slug) {
-  try {
-    return await documentSources[slug];
-  } catch {
-    return null;
-  }
+function getDocument(slug: Slug): string | null {
+  return legalDocuments[slug] ?? null;
 }
 
 export default async function LegalDocumentPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   if (!(slug in documents)) notFound();
   const config = documents[slug as Slug];
-  const source = await getDocument(slug as Slug);
+  const source = getDocument(slug as Slug);
   if (!source) notFound();
   return (
     <main className="legal-page">
