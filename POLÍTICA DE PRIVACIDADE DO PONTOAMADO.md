@@ -10,7 +10,7 @@ O tratamento de dados pessoais será realizado em conformidade com a Lei nº 13.
 
 **Controlador:** Lucio José Borba Escobar (pessoa física, responsável pela operação do PontoAmado nesta fase inicial)  
 **CNPJ:** Não aplicável nesta fase inicial; a operação está em nome da pessoa física identificada acima.  
-**Endereço:** Hernani Sá, Ilhéus, Bahia, Brasil  
+**Endereço:** Caminho Sete, nº 2A, Hernani Sá, Ilhéus, Bahia, CEP 45656-564, Brasil  
 **E-mail de privacidade:** contato@pontoamado.com.br  
 **Telefone de contato:** +55 (75) 99151-2810  
 **Canal de contato para assuntos de privacidade:** contato@pontoamado.com.br
@@ -209,7 +209,7 @@ Dúvidas, solicitações ou reclamações relativas à privacidade e à proteç�
 **E-mail:** contato@pontoamado.com.br  
 **Telefone:** +55 (75) 99151-2810  
 **Responsável:** Lucio José Borba Escobar  
-**Endereço:** Hernani Sá, Ilhéus, Bahia, Brasil
+**Endereço:** Caminho Sete, nº 2A, Hernani Sá, Ilhéus, Bahia, CEP 45656-564, Brasil
 
 Esta Política integra os Termos de Uso do PontoAmado e deverá ser interpretada em conjunto com eles, prevalecendo a legislação aplicável em caso de conflito.
 
