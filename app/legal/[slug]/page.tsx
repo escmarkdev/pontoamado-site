@@ -18,6 +18,9 @@ export function generateStaticParams() {
   return Object.keys(documents).map((slug) => ({ slug }));
 }
 
+export const dynamicParams = false;
+export const dynamic = "force-static";
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const doc = documents[slug as Slug];
@@ -78,10 +81,10 @@ function MarkdownContent({ source }: { source: string }) {
 }
 
 const documentSources: Record<Slug, Promise<string>> = {
-  "termos-clientes": readFile(path.join(process.cwd(), "TERMOS DE USO DO PONTOAMADO — CLIENTES.md"), "utf8"),
-  "termos-lojistas": readFile(path.join(process.cwd(), "TERMOS DE USO E CONTRATO DE LICENÇA DE USO DO PONTOAMADO — LOJISTAS.md"), "utf8"),
-  "regulamento-clubes": readFile(path.join(process.cwd(), "REGULAMENTO GERAL DOS CLUBES DE FIDELIDADE DO PONTOAMADO.md"), "utf8"),
-  privacidade: readFile(path.join(process.cwd(), "POLÍTICA DE PRIVACIDADE DO PONTOAMADO.md"), "utf8"),
+  "termos-clientes": readFile(path.join(process.cwd(), "content/legal/termos-clientes.md"), "utf8"),
+  "termos-lojistas": readFile(path.join(process.cwd(), "content/legal/termos-lojistas.md"), "utf8"),
+  "regulamento-clubes": readFile(path.join(process.cwd(), "content/legal/regulamento-clubes.md"), "utf8"),
+  privacidade: readFile(path.join(process.cwd(), "content/legal/privacidade.md"), "utf8"),
 };
 
 async function getDocument(slug: Slug) {
