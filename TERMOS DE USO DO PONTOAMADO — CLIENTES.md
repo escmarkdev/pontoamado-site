@@ -1,4 +1,4 @@
-# **TERMOS DE USO DO PONTOAMADO — CLIENTES**
+﻿# **TERMOS DE USO DO PONTOAMADO — CLIENTES**
 
 **Última atualização:** 11/11/2026
 
